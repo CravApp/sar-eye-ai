@@ -9,25 +9,24 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
           alt="Amazon Rainforest under cloud cover" 
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center animate-fade-in-up">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight">
-          <span className="text-primary">SAR INSIGHTS:</span>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight drop-shadow-lg">
+          <span className="text-primary drop-shadow-[0_2px_10px_rgba(0,150,255,0.8)]">SAR INSIGHTS:</span>
           <br />
-          <span className="text-foreground">La IA que ve lo oculto</span>
+          <span className="text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">La IA que ve lo oculto</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed">
+        <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed drop-shadow-lg">
           Sistema de Alerta Temprana para la Degradación Forestal Sutil en la Amazonía Peruana.
         </p>
 
