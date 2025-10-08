@@ -23,11 +23,11 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight drop-shadow-lg">
           <span className="text-primary drop-shadow-[0_2px_10px_rgba(0,150,255,0.8)]">SAR INSIGHTS:</span>
           <br />
-          <span className="text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">La IA que ve lo oculto</span>
+          <span className="text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">The AI That Sees the Hidden</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed drop-shadow-lg">
-          Sistema de Alerta Temprana para la Degradación Forestal Sutil en la Amazonía Peruana.
+          Early Warning System for Subtle Forest Degradation in the Peruvian Amazon.
         </p>
 
         <Button 
@@ -35,7 +35,7 @@ const Hero = () => {
           size="lg"
           className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-8 py-6 font-bold uppercase tracking-wider shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300"
         >
-          Ver el Mapa MVP
+          View MVP Map
         </Button>
 
         {/* Scroll Indicator */}

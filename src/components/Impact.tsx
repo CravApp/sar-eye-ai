@@ -2,30 +2,30 @@ import { CheckCircle2, Calendar, Zap, Database, Bell, DollarSign } from "lucide-
 
 const Impact = () => {
   const milestones = [
-    { title: "Modelo U-TAE Entrenado", completed: true },
-    { title: "Mapa de Degradación Sutil (MVP)", completed: true },
-    { title: "Plataforma de Alerta Autónoma", completed: false, timeline: "Próximos 6 meses" }
+    { title: "U-TAE Model Trained", completed: true },
+    { title: "Subtle Degradation Map (MVP)", completed: true },
+    { title: "Autonomous Alert Platform", completed: false, timeline: "Next 6 months" }
   ];
 
   const roadmapItems = [
     { 
       icon: CheckCircle2, 
-      text: "Validar el IoU final del modelo con el Ground Truth", 
+      text: "Validate final model IoU with Ground Truth", 
       lead: "Cristhian" 
     },
     { 
       icon: Zap, 
-      text: "Optimizar el Pipeline de GEE a una API para escalabilidad", 
+      text: "Optimize GEE Pipeline to API for scalability", 
       lead: "Diego/Irwin" 
     },
     { 
       icon: Bell, 
-      text: "Integrar un sistema de notificaciones por email/SMS para las alertas", 
+      text: "Integrate email/SMS notification system for alerts", 
       lead: "Backend" 
     },
     { 
       icon: DollarSign, 
-      text: "Asegurar el financiamiento para la Validación en Campo", 
+      text: "Secure funding for Field Validation", 
       lead: "Edú" 
     }
   ];
@@ -34,9 +34,9 @@ const Impact = () => {
     <section id="impact" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-black text-center mb-16">
-          <span className="text-foreground">El Impacto en</span>
+          <span className="text-foreground">The Impact in</span>
           <br />
-          <span className="text-primary">14 Horas y Nuestro Roadmap</span>
+          <span className="text-primary">14 Hours and Our Roadmap</span>
         </h2>
 
         {/* Timeline */}
@@ -65,7 +65,7 @@ const Impact = () => {
                     <p className="text-sm text-primary font-semibold">{milestone.timeline}</p>
                   )}
                   {milestone.completed && (
-                    <p className="text-sm text-secondary font-semibold">✓ Completado</p>
+                    <p className="text-sm text-secondary font-semibold">✓ Completed</p>
                   )}
                 </div>
               ))}
@@ -76,7 +76,7 @@ const Impact = () => {
         {/* Roadmap */}
         <div className="max-w-4xl mx-auto mb-20">
           <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Siguientes Pasos
+            Next Steps
           </h3>
           <div className="grid gap-6">
             {roadmapItems.map((item, index) => {
@@ -91,7 +91,7 @@ const Impact = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-foreground font-semibold text-lg mb-1">{item.text}</p>
-                    <p className="text-muted-foreground text-sm">Responsable: <span className="text-primary">{item.lead}</span></p>
+                    <p className="text-muted-foreground text-sm">Lead: <span className="text-primary">{item.lead}</span></p>
                   </div>
                 </div>
               );
@@ -108,10 +108,10 @@ const Impact = () => {
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Ejecución de Alto Rendimiento</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-3">High-Performance Execution</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Este MVP fue posible gracias a la <span className="text-secondary font-semibold">ejecución paralela y eficiente</span> de 
-                nuestro equipo de 6 expertos, que logró integrar la Ciencia de Datos (SAR/U-TAE) en tan solo <span className="text-primary font-semibold">14 horas</span>.
+                This MVP was made possible thanks to the <span className="text-secondary font-semibold">parallel and efficient execution</span> of 
+                our team of 6 experts, who managed to integrate Data Science (SAR/U-TAE) in just <span className="text-primary font-semibold">14 hours</span>.
               </p>
             </div>
           </div>
@@ -122,9 +122,9 @@ const Impact = () => {
           <div className="aspect-video bg-card rounded-2xl border-2 border-primary/30 overflow-hidden shadow-2xl shadow-primary/10 flex items-center justify-center">
             <div className="text-center p-8">
               <Database className="w-24 h-24 text-primary mx-auto mb-6 opacity-50" />
-              <h3 className="text-3xl font-bold text-foreground mb-4">Mapa de Degradación Forestal</h3>
+              <h3 className="text-3xl font-bold text-foreground mb-4">Forest Degradation Map</h3>
               <p className="text-xl text-muted-foreground">
-                Visualización interactiva del MVP en desarrollo
+                Interactive MVP visualization in development
               </p>
             </div>
           </div>
